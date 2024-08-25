@@ -1,20 +1,15 @@
-
-from aiogram import Bot, Dispatcher, types
 import asyncio
-from config import BOT_TOKEN
-
-
-
 import random
 import string
-from aiogram import Bot, Router, types
+
+import redis.asyncio as redis
+from aiogram import Bot, Dispatcher, Router, types
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 from aiogram.fsm.context import FSMContext
-import redis.asyncio as redis
-import asyncio
-from States.states import UserMessage
+
 from config import BOT_TOKEN
+from States.states import UserMessage
 
 redis = redis.from_url('redis://localhost')
 
