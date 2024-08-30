@@ -24,10 +24,10 @@
 
 ### Установка
 
-1. Клонируйте репозиторий: https://github.com/YanniszY/anonymousTGmessages.git
+1. Клонируйте репозиторий:
 
     ```bash
-    git clone 
+    git clone https://github.com/YanniszY/anonymousTGmessages.git
     cd anonymousTGmessages
     ```
 
