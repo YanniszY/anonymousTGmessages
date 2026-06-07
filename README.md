@@ -1,63 +1,63 @@
 # Anonymous Telegram Bot
 
-Этот проект представляет собой Telegram-бота, который генерирует уникальную ссылку для каждого пользователя. Люди могут делиться этими ссылками, чтобы получать анонимные сообщения от других.
+This project is a Telegram bot that generates a unique link for each user. Users can share these links to receive anonymous messages from anyone.
 
-## Описание
+## Description
 
-**Anonymous Telegram Bot** позволяет пользователям получить уникальную ссылку, которую можно разместить в соцсетях, форумах или отправить напрямую другим людям. Любой, у кого есть эта ссылка, может отправить анонимное сообщение, которое будет доставлено в Telegram владельцу ссылки.
+**Anonymous Telegram Bot** allows users to get a unique link that can be shared on social media, forums, or sent directly to others. Anyone with access to this link can send an anonymous message, which will be safely delivered right to the link owner's Telegram.
 
 ![logo](img/logo.png)
 
-### Основные возможности
+### Key Features
 
-- Генерация уникальной ссылки для каждого пользователя.
-- Отправка анонимных сообщений через эту ссылку.
-- Поддержка безопасности и приватности: отправители остаются анонимными.
-- Легкая интеграция и использование через Telegram.
+- **Unique Link Generation**: Creates a distinct link for every registered user.
+- **Anonymous Messaging**: Seamless message delivery through generated links.
+- **Privacy & Security**: Send messages with complete sender anonymity.
+- **User-Friendly**: Easy setup and interaction directly within Telegram.
 
-## Установка и настройка
+## Installation & Setup
 
-### Требования
+### Requirements
 
 - Python 3.12+
-- Telegram Bot API токен
+- Redis Server
+- Telegram Bot API Token
 
-### Установка
+### Installation Steps
 
-1. Клонируйте репозиторий:
+1. Clone the repository and navigate to the project directory:
 
-    ```bash
-    git clone https://github.com/YanniszY/anonymousTGmessages.git
+```bash
+    git clone [https://github.com/YanniszY/anonymousTGmessages.git](https://github.com/YanniszY/anonymousTGmessages.git)
     cd anonymousTGmessages
-    ```
+```
 
-2. Установите зависимости:
+2. Install the required dependencies:
 
-    ```bash
+```bash
     pip install -r requirements.txt
-    ```
+```
 
-3. Создайте файл `.env` и добавьте туда ваш Telegram Bot API токен:
+3. Create a `.env` file in the root directory and add your Telegram Bot API token:
 
-    ```env
-    BOT_TOKEN="ваш_токен_бота"
-    ```
+```env
+    BOT_TOKEN="your_bot_token_here"
+```
 
-4. Запустите бота:
+4. Start your Redis server:
+```bash
+    redis-server
+```
 
-    ```bash
+5. Run the bot script:
+
+```bash
     python bot.py
-    ```
+```
 
-5. Запустите серврер Redis:
-   ```bash
-   redis-server
-   ```
+## How to Use
 
-## Использование
-
-1. Запустите бота в Telegram.
-2. Введите команду `/start`, чтобы получить вашу уникальную ссылку.
-3. Поделитесь этой ссылкой где угодно.
-4. Получайте анонимные сообщения прямо в Telegram!
-
+1. Start the bot in Telegram.
+2. Use the `/start` command to generate your unique link.
+3. Share this link anywhere (Instagram bio, Twitter/X, TikTok, etc.).
+4. Receive anonymous feedback and messages directly in your Telegram chat!
